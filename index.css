@@ -1,0 +1,137 @@
+@font-face{
+    font-family: Segoe_UI;
+    src: url(Kontur-Iconic-eco-20px.ttf);
+}
+
+@font-face{
+    font-family: Segoe_UI_web;
+    src: url(Kontur-iconic-eco-webfont.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background: #d3d3d3;
+    font: Segoe_UI; 
+    color: #404040; 
+    font-size: 14px;
+}
+
+header, main{
+    border-radius: 20px;
+}
+
+header{
+    width: 1200px;
+    height: 140px;
+    background-color: #9faab5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: Segoe_UI_web; 
+    color: #404040; 
+    font-size: 100px;
+    margin: 20px;
+}
+
+main{
+    width: 1000px;
+    min-height: calc(100vh - 290px);
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 40px;
+}
+
+.autocomplete{
+    width: 430px;
+    min-height: 50px;
+}
+
+.name_input{
+    width: 50px;
+    height: 50px;
+}
+
+#text_area{
+    width: 420px;
+    outline: none;
+    color: #404040;
+    border: #404040 solid 2px;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+}
+
+:focus::-webkit-input-placeholder,
+:focus::-moz-placeholder,
+:focus:-moz-placeholder,
+:focus:-ms-input-placeholder {
+    color:#909090;
+}
+
+#cities, #message{
+    display: none;
+    width: 420px;
+    background: #fff;
+    font: 14px Segoe_UI;
+    line-height: 20px;
+    overflow-y: auto;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    position: absolute;
+    margin: 0 2px;
+}
+
+#cities{
+    z-index: 9999;
+    max-height: 450px;
+    color: #404040;
+}
+
+#list_cities{
+    min-width: 403px;
+    max-width: 420px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#message{
+    height: 50px;
+    box-sizing: border-box;
+    color:#707070;
+}
+
+#loader, #notFound{
+    display: none;
+}
+
+.city, #loader, #notFound{
+    padding: 10px;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.city:hover{
+    display: block;
+    background-color: #5199db;
+    color: #fff;    
+}
+
+#loader{
+    color: #404040;
+}
+
+#error{
+    display: none;
+    color: #f00;
+}

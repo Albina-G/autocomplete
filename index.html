@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Autocomplete</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <header>Автокомплит</header>
+    <main>
+        <section class="autocomplete">
+            <span class="name_input">Город:</span>
+            <input type="text" placeholder="Начните вводить название" id="text_area">
+            <div id="cities"></div>
+            <div id="message">
+                <div id="loader">
+                    <img src="images/loader.gif" alt="Загрузка" width="15">
+                    <span>Загрузка</span>
+                </div>
+                <div id="notFound">Не найдено</div>
+            </div>
+            <div id="error">Выберите значение из списка</div>
+        </section>
+    </main>
+</body>
+</html>
